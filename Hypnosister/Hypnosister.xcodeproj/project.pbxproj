@@ -15,19 +15,8 @@
 		BAE703F81AE809A700051B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE703F71AE809A700051B17 /* AppDelegate.m */; };
 		BAE703FA1AE809A700051B17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE703F91AE809A700051B17 /* Images.xcassets */; };
 		BAE703FD1AE809A700051B17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAE703FB1AE809A700051B17 /* LaunchScreen.xib */; };
-		BAE704091AE809A700051B17 /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE704081AE809A700051B17 /* HypnosisterTests.m */; };
 		BAE704171AE80B5700051B17 /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE704161AE80B5700051B17 /* BNRHypnosisView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BAE704031AE809A700051B17 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BAE703E71AE809A700051B17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BAE703EE1AE809A700051B17;
-			remoteInfo = Hypnosister;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BA8D36001C651BBA00ACBF91 /* iSam2x320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iSam2x320.png; sourceTree = "<group>"; };
@@ -42,7 +31,6 @@
 		BAE703F71AE809A700051B17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BAE703F91AE809A700051B17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BAE703FC1AE809A700051B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BAE704021AE809A700051B17 /* HypnosisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnosisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE704071AE809A700051B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAE704081AE809A700051B17 /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
 		BAE704151AE80B5700051B17 /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
@@ -51,13 +39,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		BAE703EC1AE809A700051B17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAE703FF1AE809A700051B17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				BAE703EF1AE809A700051B17 /* AlwaysForever.app */,
-				BAE704021AE809A700051B17 /* HypnosisterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,24 +130,6 @@
 			productReference = BAE703EF1AE809A700051B17 /* AlwaysForever.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BAE704011AE809A700051B17 /* HypnosisterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BAE7040F1AE809A700051B17 /* Build configuration list for PBXNativeTarget "HypnosisterTests" */;
-			buildPhases = (
-				BAE703FE1AE809A700051B17 /* Sources */,
-				BAE703FF1AE809A700051B17 /* Frameworks */,
-				BAE704001AE809A700051B17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BAE704041AE809A700051B17 /* PBXTargetDependency */,
-			);
-			name = HypnosisterTests;
-			productName = HypnosisterTests;
-			productReference = BAE704021AE809A700051B17 /* HypnosisterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,10 +141,6 @@
 				TargetAttributes = {
 					BAE703EE1AE809A700051B17 = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					BAE704011AE809A700051B17 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = BAE703EE1AE809A700051B17;
 					};
 				};
 			};
@@ -200,7 +158,6 @@
 			projectRoot = "";
 			targets = (
 				BAE703EE1AE809A700051B17 /* AlwaysForever */,
-				BAE704011AE809A700051B17 /* HypnosisterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,13 +175,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAE704001AE809A700051B17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -239,23 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAE703FE1AE809A700051B17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAE704091AE809A700051B17 /* HypnosisterTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BAE704041AE809A700051B17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BAE703EE1AE809A700051B17 /* AlwaysForever */;
-			targetProxy = BAE704031AE809A700051B17 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BAE703FB1AE809A700051B17 /* LaunchScreen.xib */ = {
@@ -356,8 +290,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hypnosister/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -366,42 +302,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hypnosister/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		BAE704101AE809A700051B17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HypnosisterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hypnosister.app/Hypnosister";
-			};
-			name = Debug;
-		};
-		BAE704111AE809A700051B17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HypnosisterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hypnosister.app/Hypnosister";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -422,15 +326,6 @@
 			buildConfigurations = (
 				BAE7040D1AE809A700051B17 /* Debug */,
 				BAE7040E1AE809A700051B17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BAE7040F1AE809A700051B17 /* Build configuration list for PBXNativeTarget "HypnosisterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BAE704101AE809A700051B17 /* Debug */,
-				BAE704111AE809A700051B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
