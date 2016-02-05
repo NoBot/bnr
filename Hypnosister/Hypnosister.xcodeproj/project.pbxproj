@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA8D36011C651BBA00ACBF91 /* iSam2x320.png in Resources */ = {isa = PBXBuildFile; fileRef = BA8D36001C651BBA00ACBF91 /* iSam2x320.png */; };
 		BA91A28C1AE876D100314EC7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA91A28B1AE876D100314EC7 /* logo.png */; };
 		BAE703F51AE809A700051B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE703F41AE809A700051B17 /* main.m */; };
 		BAE703F81AE809A700051B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE703F71AE809A700051B17 /* AppDelegate.m */; };
@@ -27,8 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA8D36001C651BBA00ACBF91 /* iSam2x320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iSam2x320.png; sourceTree = "<group>"; };
 		BA91A28B1AE876D100314EC7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		BAE703EF1AE809A700051B17 /* Hypnosister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnosister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE703EF1AE809A700051B17 /* AlwaysForever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysForever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE703F31AE809A700051B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAE703F41AE809A700051B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAE703F61AE809A700051B17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,7 +74,7 @@
 		BAE703F01AE809A700051B17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BAE703EF1AE809A700051B17 /* Hypnosister.app */,
+				BAE703EF1AE809A700051B17 /* AlwaysForever.app */,
 				BAE704021AE809A700051B17 /* HypnosisterTests.xctest */,
 			);
 			name = Products;
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BA91A28B1AE876D100314EC7 /* logo.png */,
+				BA8D36001C651BBA00ACBF91 /* iSam2x320.png */,
 				BAE703F61AE809A700051B17 /* AppDelegate.h */,
 				BAE703F71AE809A700051B17 /* AppDelegate.m */,
 				BAE703F91AE809A700051B17 /* Images.xcassets */,
@@ -122,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BAE703EE1AE809A700051B17 /* Hypnosister */ = {
+		BAE703EE1AE809A700051B17 /* AlwaysForever */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAE7040C1AE809A700051B17 /* Build configuration list for PBXNativeTarget "Hypnosister" */;
+			buildConfigurationList = BAE7040C1AE809A700051B17 /* Build configuration list for PBXNativeTarget "AlwaysForever" */;
 			buildPhases = (
 				BAE703EB1AE809A700051B17 /* Sources */,
 				BAE703EC1AE809A700051B17 /* Frameworks */,
@@ -134,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = Hypnosister;
+			name = AlwaysForever;
 			productName = Hypnosister;
-			productReference = BAE703EF1AE809A700051B17 /* Hypnosister.app */;
+			productReference = BAE703EF1AE809A700051B17 /* AlwaysForever.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BAE704011AE809A700051B17 /* HypnosisterTests */ = {
@@ -188,7 +191,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BAE703EE1AE809A700051B17 /* Hypnosister */,
+				BAE703EE1AE809A700051B17 /* AlwaysForever */,
 				BAE704011AE809A700051B17 /* HypnosisterTests */,
 			);
 		};
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE703FD1AE809A700051B17 /* LaunchScreen.xib in Resources */,
+				BA8D36011C651BBA00ACBF91 /* iSam2x320.png in Resources */,
 				BAE703FA1AE809A700051B17 /* Images.xcassets in Resources */,
 				BA91A28C1AE876D100314EC7 /* logo.png in Resources */,
 			);
@@ -238,7 +242,7 @@
 /* Begin PBXTargetDependency section */
 		BAE704041AE809A700051B17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BAE703EE1AE809A700051B17 /* Hypnosister */;
+			target = BAE703EE1AE809A700051B17 /* AlwaysForever */;
 			targetProxy = BAE704031AE809A700051B17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -403,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAE7040C1AE809A700051B17 /* Build configuration list for PBXNativeTarget "Hypnosister" */ = {
+		BAE7040C1AE809A700051B17 /* Build configuration list for PBXNativeTarget "AlwaysForever" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAE7040D1AE809A700051B17 /* Debug */,
