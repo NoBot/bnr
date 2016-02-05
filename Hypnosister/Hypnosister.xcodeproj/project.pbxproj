@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BA8D36011C651BBA00ACBF91 /* iSam2x320.png in Resources */ = {isa = PBXBuildFile; fileRef = BA8D36001C651BBA00ACBF91 /* iSam2x320.png */; };
+		BA8D36081C65208900ACBF91 /* BNRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8D36061C65208900ACBF91 /* BNRMainViewController.m */; };
+		BA8D36091C65208900ACBF91 /* BNRMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8D36071C65208900ACBF91 /* BNRMainViewController.xib */; };
 		BA91A28C1AE876D100314EC7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA91A28B1AE876D100314EC7 /* logo.png */; };
 		BAE703F51AE809A700051B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE703F41AE809A700051B17 /* main.m */; };
 		BAE703F81AE809A700051B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE703F71AE809A700051B17 /* AppDelegate.m */; };
@@ -29,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		BA8D36001C651BBA00ACBF91 /* iSam2x320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iSam2x320.png; sourceTree = "<group>"; };
+		BA8D36051C65208900ACBF91 /* BNRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMainViewController.h; sourceTree = "<group>"; };
+		BA8D36061C65208900ACBF91 /* BNRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMainViewController.m; sourceTree = "<group>"; };
+		BA8D36071C65208900ACBF91 /* BNRMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRMainViewController.xib; sourceTree = "<group>"; };
 		BA91A28B1AE876D100314EC7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		BAE703EF1AE809A700051B17 /* AlwaysForever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysForever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE703F31AE809A700051B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +91,9 @@
 				BA91A28B1AE876D100314EC7 /* logo.png */,
 				BA8D36001C651BBA00ACBF91 /* iSam2x320.png */,
 				BAE703F61AE809A700051B17 /* AppDelegate.h */,
+				BA8D36051C65208900ACBF91 /* BNRMainViewController.h */,
+				BA8D36061C65208900ACBF91 /* BNRMainViewController.m */,
+				BA8D36071C65208900ACBF91 /* BNRMainViewController.xib */,
 				BAE703F71AE809A700051B17 /* AppDelegate.m */,
 				BAE703F91AE809A700051B17 /* Images.xcassets */,
 				BAE703FB1AE809A700051B17 /* LaunchScreen.xib */,
@@ -204,6 +212,7 @@
 			files = (
 				BAE703FD1AE809A700051B17 /* LaunchScreen.xib in Resources */,
 				BA8D36011C651BBA00ACBF91 /* iSam2x320.png in Resources */,
+				BA8D36091C65208900ACBF91 /* BNRMainViewController.xib in Resources */,
 				BAE703FA1AE809A700051B17 /* Images.xcassets in Resources */,
 				BA91A28C1AE876D100314EC7 /* logo.png in Resources */,
 			);
@@ -223,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8D36081C65208900ACBF91 /* BNRMainViewController.m in Sources */,
 				BAE703F81AE809A700051B17 /* AppDelegate.m in Sources */,
 				BAE703F51AE809A700051B17 /* main.m in Sources */,
 				BAE704171AE80B5700051B17 /* BNRHypnosisView.m in Sources */,
