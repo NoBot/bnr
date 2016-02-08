@@ -59,15 +59,16 @@
     [path stroke];
     
     // Insert an image
-    UIImage *logoImage = [UIImage imageNamed:@"iSam2x320"];
+    UIImage *logoImage = [UIImage imageNamed:@"bwerx.png"];
     
-    CGRect logobounds = bounds;
-    logobounds.size.height = bounds.size.width * 0.9;
-    logobounds.size.width = logobounds.size.height;
-    logobounds.origin.x = bounds.size.width / 2.0 - logobounds.size.width / 2.0;
-    logobounds.origin.y = bounds.size.height / 2.0 - logobounds.size.height / 2.0;
-    [logoImage drawInRect: logobounds];
-    
+//    CGRect logobounds = bounds;
+//    logobounds.size.height = bounds.size.width * 0.9;
+//    logobounds.size.width = logobounds.size.height;
+//    logobounds.origin.x = bounds.size.width / 2.0 - logobounds.size.width / 2.0;
+//    logobounds.origin.y = bounds.size.height / 2.0 - logobounds.size.height / 2.0;
+//    [logoImage drawInRect: logobounds];
+
+    [logoImage drawInRect:CGRectMake((self.bounds.size.width - logoImage.size.width)/2.0, (self.bounds.size.height - logoImage.size.height)/2.0, logoImage.size.width, logoImage.size.height)];
     
 }
 

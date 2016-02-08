@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BAE703EE1AE809A700051B17"
-               BuildableName = "AlwaysForever.app"
-               BlueprintName = "AlwaysForever"
+               BuildableName = "Hypnosister.app"
+               BlueprintName = "Hypnosister"
                ReferencedContainer = "container:Hypnosister.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BAE703EE1AE809A700051B17"
-            BuildableName = "AlwaysForever.app"
-            BlueprintName = "AlwaysForever"
+            BuildableName = "Hypnosister.app"
+            BlueprintName = "Hypnosister"
             ReferencedContainer = "container:Hypnosister.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BAE703EE1AE809A700051B17"
-            BuildableName = "AlwaysForever.app"
-            BlueprintName = "AlwaysForever"
+            BuildableName = "Hypnosister.app"
+            BlueprintName = "Hypnosister"
             ReferencedContainer = "container:Hypnosister.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -99,8 +99,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BAE703EE1AE809A700051B17"
-            BuildableName = "AlwaysForever.app"
-            BlueprintName = "AlwaysForever"
+            BuildableName = "Hypnosister.app"
+            BlueprintName = "Hypnosister"
             ReferencedContainer = "container:Hypnosister.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
