@@ -59,7 +59,7 @@
     [path stroke];
     
     // Insert an image
-    UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
+    UIImage *logoImage = [UIImage imageNamed:@"iSam2x320"];
     
     CGRect logobounds = bounds;
     logobounds.size.height = bounds.size.width * 0.9;
