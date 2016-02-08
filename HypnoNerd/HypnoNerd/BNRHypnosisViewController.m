@@ -9,7 +9,13 @@
 #import "BNRHypnosisViewController.h"
 #import "BNRHypnosisView.h"
 
+#pragma mark - <UItextFieldDelegate>
+@interface BNRHypnosisViewController () <UITextFieldDelegate>
+@end
+
 @implementation BNRHypnosisViewController
+
+#pragma mark - Load code
 
 -(instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,9 +54,77 @@
     // Setting the border style on the text field will allow us to see it more easily
     textField.borderStyle = UITextBorderStyleRoundedRect;
     [backgroundView addSubview:textField];
+    textField.placeholder = @"Hypnotize me";
+    textField.returnKeyType = UIReturnKeyDone;
+    textField.keyboardType = UIKeyboardTypeEmailAddress;
+    textField.autocorrectionType = NO;
+    
+    // Set BNRHypnosisViewController as the delegate for textField
+    textField.delegate = self;
     
     // Set it as *the* view of this view controller
     self.view = backgroundView;
-}	
+}
+
+#pragma mark - View specific code
+
+-(BOOL) textFieldShouldReturn:(UITextView *) textField
+{
+    //NSLog(@"%@", textField.text);
+    [self drawHypnoticMessage: textField.text];
+    textField.text = @"";
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(void)drawHypnoticMessage:(NSString *) message
+{
+    for (int i=0; i<20; i++)
+    {
+        UILabel *messageLabel = [[UILabel alloc]init];
+        
+        // Configure the label's colors and text
+        messageLabel.backgroundColor = [UIColor clearColor];
+        messageLabel.textColor = [UIColor blackColor];
+        messageLabel.text = message;
+        
+        // this method resizes the lablel, which will be relative
+        [messageLabel sizeToFit];
+        
+        // Get a random x value that fits within the hypnosis view's width
+        int width = self.view.bounds.size.width - messageLabel.bounds.size.width;
+        int x = arc4random_uniform(width) % width;
+        
+        // Get a random y value that fits within the hypnosis view's height
+        int height = self.view.bounds.size.height - messageLabel.bounds.size.height;
+        int y = arc4random_uniform(height) % height;
+        
+        // Update the label's frame
+        CGRect frame = messageLabel.frame;
+        frame.origin = CGPointMake(x, y);
+        messageLabel.frame = frame;
+        
+        // Add the label to the hierachy
+        [self.view addSubview:messageLabel];
+        
+        // Animation Motion Effects
+        UIInterpolatingMotionEffect *motionEffect;
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x"
+                                                                       type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        motionEffect.minimumRelativeValue = @-50;
+        motionEffect.maximumRelativeValue = @50;
+        [messageLabel addMotionEffect:motionEffect];
+        
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y"
+                                                                       type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        motionEffect.minimumRelativeValue = @-50;
+        motionEffect.maximumRelativeValue = @50;
+        [messageLabel addMotionEffect:motionEffect];
+
+        
+    }
+}
+
+
 
 @end
