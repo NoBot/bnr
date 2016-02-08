@@ -48,7 +48,6 @@
     CGRect frame = [UIScreen mainScreen].bounds;
     BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] initWithFrame:frame];
     
-    
     // Add text field
     CGRect textFieldRect = CGRectMake(20,120,335,30);
     UITextField *textField = [[UITextField alloc] initWithFrame:textFieldRect];
@@ -60,6 +59,7 @@
     textField.returnKeyType = UIReturnKeyDone;
     textField.keyboardType = UIKeyboardTypeEmailAddress;
     textField.autocorrectionType = NO;
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     
     // Set BNRHypnosisViewController as the delegate for textField
     textField.delegate = self;
@@ -104,7 +104,7 @@
             newColor = [UIColor blueColor];
             break;
         default:
-            newColor = [UIColor grayColor];
+            newColor = [UIColor blackColor];
             break;
     }
     
@@ -117,7 +117,7 @@
     //NSLog(@"%@", textField.text);
     [self drawHypnoticMessage: textField.text];
     textField.text = @"";
-    [textField resignFirstResponder];
+    [textField resignFirstResponder];  // Releases focus
     return YES;
 }
 
