@@ -84,12 +84,13 @@
     self.view = backgroundView;
 }
 
+
 #pragma mark - View specific code
 
 -(void) setCircleColor:(id) sender
 {
     UISegmentedControl *segmentControl = (UISegmentedControl *) sender;
-    BNRHypnosisView *bgview = self.view;
+    BNRHypnosisView *bgview = (BNRHypnosisView *) self.view;
     UIColor *newColor = [[UIColor alloc] init];
     
     switch (segmentControl.selectedSegmentIndex){
