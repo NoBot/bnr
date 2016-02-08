@@ -17,6 +17,7 @@
 
 @end
 
+
 @implementation BNRMainViewController
 
 - (void)viewDidLoad {
@@ -37,11 +38,11 @@
     CGRect bigRect = screenRect;
     bigRect.size.width *= 2.0;
     
-    // Add first sam
+    // Add first view
     BNRHypnosisView *hview1 = [[BNRHypnosisView alloc] initWithFrame:screenRect];
     [self.scrollView addSubview:hview1];
     
-    // Add second sam
+    // Add second view
     screenRect.origin.x += screenRect.size.width;
     BNRHypnosisView *hview2 = [[BNRHypnosisView alloc] initWithFrame:screenRect];
     [self.scrollView addSubview: hview2];
